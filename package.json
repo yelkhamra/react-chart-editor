@@ -1,7 +1,7 @@
 {
   "name": "@yelkhamra/react-chart-editor",
   "description": "plotly.js chart editor react component UI",
-  "version": "0.46.1",
+  "version": "0.46.5",
   "publishConfig": { "registry": "https://npm.pkg.github.com" },
   "author": "Plotly, Inc.",
   "bugs": {
