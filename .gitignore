@@ -12,6 +12,8 @@ npm-debug.log*
 !.eslintignore
 !.percy.yml
 !.circleci
+!.github
+!.npmrc
 
 example/dist
 
