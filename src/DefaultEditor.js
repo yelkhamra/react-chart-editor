@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {PanelMenuWrapper} from './components';
 import {
   GraphCreatePanel,
-  GraphTransformsPanel,
   GraphSubplotsPanel,
   StyleLayoutPanel,
   StyleAxesPanel,
@@ -19,21 +18,16 @@ import {
 } from './default_panels';
 import {traceHasColorbar} from './default_panels/StyleColorbarsPanel';
 import Logo from './components/widgets/Logo';
-import {TRANSFORMABLE_TRACES, TRACE_TO_AXIS} from './lib/constants';
+import {TRACE_TO_AXIS} from './lib/constants';
 
 class DefaultEditor extends Component {
   constructor(props, context) {
     super(props, context);
-    this.hasTransforms = this.hasTransforms.bind(this);
     this.hasAxes = this.hasAxes.bind(this);
     this.hasMenus = this.hasMenus.bind(this);
     this.hasSliders = this.hasSliders.bind(this);
     this.hasColorbars = this.hasColorbars.bind(this);
     this.hasLegend = this.hasLegend.bind(this);
-  }
-
-  hasTransforms() {
-    return this.context.fullData.some((d) => TRANSFORMABLE_TRACES.includes(d.type));
   }
 
   hasAxes() {
@@ -86,9 +80,6 @@ class DefaultEditor extends Component {
         {logo || null}
         <GraphCreatePanel group={_('Structure')} name={_('Traces')} />
         <GraphSubplotsPanel group={_('Structure')} name={_('Subplots')} />
-        {this.hasTransforms() && (
-          <GraphTransformsPanel group={_('Structure')} name={_('Transforms')} />
-        )}
         <StyleLayoutPanel group={_('Style')} name={_('General')} collapsedOnStart />
         <StyleTracesPanel group={_('Style')} name={_('Traces')} />
         {this.hasAxes() && <StyleAxesPanel group={_('Style')} name={_('Axes')} collapsedOnStart />}

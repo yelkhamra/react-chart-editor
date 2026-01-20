@@ -83,14 +83,6 @@ function computeTraceOptionsFromSchema(schema, _, context) {
       label: _('Scatter GL'),
     },
     {
-      value: 'pointcloud',
-      label: _('Point Cloud'),
-    },
-    {
-      value: 'heatmapgl',
-      label: _('Heatmap GL'),
-    },
-    {
       value: 'parcoords',
       label: _('Parallel Coordinates'),
     },

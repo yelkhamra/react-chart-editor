@@ -133,9 +133,7 @@ function maybeTransposeData(data, srcAttributePath, traceType) {
 
   const isTransposable2DArray =
     srcAttributePath.endsWith('zsrc') &&
-    ['contour', 'contourgl', 'heatmap', 'heatmapgl', 'surface', 'carpet', 'contourcarpet'].includes(
-      traceType
-    );
+    ['contour', 'contourgl', 'heatmap', 'surface', 'carpet', 'contourcarpet'].includes(traceType);
 
   if (isTransposable2DArray) {
     return transpose(data);

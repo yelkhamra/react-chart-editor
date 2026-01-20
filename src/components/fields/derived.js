@@ -570,7 +570,6 @@ export const HoverInfo = connectToContainer(UnconnectedFlaglist, {
     if (
       [
         'heatmap',
-        'heatmapgl',
         'histogram2d',
         'histogram2dcontour',
         'contour',

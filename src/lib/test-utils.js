@@ -39,11 +39,13 @@ const fixtures = {
           },
         ],
         layout: {
-          title: 'Double Y Axis Example',
+          title: {text: 'Double Y Axis Example'},
           yaxis: {},
           yaxis2: {
-            title: 'yaxis2 title',
-            titlefont: {color: 'rgb(148, 103, 189)'},
+            title: {
+              text: 'yaxis2 title',
+              font: {color: 'rgb(148, 103, 189)'},
+            },
             tickfont: {color: 'rgb(148, 103, 189)'},
             overlaying: 'y',
             side: 'right',

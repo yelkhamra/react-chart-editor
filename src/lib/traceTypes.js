@@ -238,17 +238,6 @@ export const traceTypes = (_) => [
     category: chartCategory(_).THREE_D,
   },
   {
-    value: 'heatmapgl',
-    icon: 'heatmap',
-    label: _('Heatmap GL'),
-    category: chartCategory(_).HIDDEN,
-  },
-  {
-    value: 'pointcloud',
-    label: _('Point Cloud'),
-    category: chartCategory(_).HIDDEN,
-  },
-  {
     value: 'parcoords',
     label: _('Parallel Coordinates'),
     category: chartCategory(_).HIDDEN,

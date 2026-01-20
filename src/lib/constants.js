@@ -62,7 +62,6 @@ export const TRACE_TO_AXIS = {
     'violin',
     'bar',
     'heatmap',
-    'heatmapgl',
     'contour',
     'ohlc',
     'candlestick',

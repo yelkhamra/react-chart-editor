@@ -43,7 +43,6 @@ export class UnconnectedDataSelector extends Component {
             'bar',
             'funnel',
             'heatmap',
-            'heatmapgl',
             'violin',
             'waterfall',
             'box',
@@ -51,15 +50,9 @@ export class UnconnectedDataSelector extends Component {
             'contourgl',
           ].includes(props.container.type)) ||
         (props.attr === 'z' &&
-          [
-            'contour',
-            'contourgl',
-            'heatmap',
-            'heatmapgl',
-            'surface',
-            'carpet',
-            'contourcarpet',
-          ].includes(props.container.type)) ||
+          ['contour', 'contourgl', 'heatmap', 'surface', 'carpet', 'contourcarpet'].includes(
+            props.container.type
+          )) ||
         (props.container.type === 'table' && props.attr !== 'columnorder') ||
         Array.isArray(this.fullValue);
     }

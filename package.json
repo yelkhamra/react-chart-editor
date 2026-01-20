@@ -1,7 +1,7 @@
 {
   "name": "@yelkhamra/react-chart-editor",
   "description": "plotly.js chart editor react component UI",
-  "version": "0.46.5",
+  "version": "0.47.0",
   "publishConfig": { "registry": "https://npm.pkg.github.com" },
   "author": "Plotly, Inc.",
   "bugs": {
@@ -61,10 +61,8 @@
     "@hot-loader/react-dom": "16.14.0",
     "@percy/cli": "1.26.3",
     "@percy/storybook": "4.3.6",
-    "@storybook/blocks": "^8.6.14",
     "@storybook/react": "^10.0.1",
     "@storybook/react-webpack5": "^10.0.1",
-    "@storybook/source-loader": "^7.4.1",
     "assert": "^2.1.0",
     "autoprefixer": "10.4.16",
     "babel-jest": "^30.2.0",
@@ -91,7 +89,7 @@
     "jest-environment-jsdom": "^30.2.0",
     "mkdirp": "3.0.1",
     "path-browserify": "^1.0.1",
-    "plotly.js": "2.27.0",
+    "plotly.js": "3.3.1",
     "postcss": "8.4.31",
     "postcss-cli": "10.1.0",
     "postcss-combine-duplicated-selectors": "10.0.3",
@@ -122,7 +120,7 @@
     "webpack-dev-server": "^5.2.2"
   },
   "peerDependencies": {
-    "plotly.js": ">=1.58.5 <3.0.0",
+    "plotly.js": ">=1.58.5 <4.0.0",
     "react": ">=16.14.0",
     "react-dom": ">=16.14.0"
   },

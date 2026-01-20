@@ -156,7 +156,7 @@ const StyleTracesPanel = (props, {localize: _}) => (
       <TextEditor label={_('Name')} attr="title.text" />
       <Dropdown
         label={'Title Position'}
-        attr="titleposition"
+        attr="title.position"
         options={[
           {label: _('Top Left'), value: 'top left'},
           {label: _('Top Center'), value: 'top center'},
@@ -772,11 +772,7 @@ const StyleTracesPanel = (props, {localize: _}) => (
       <Numeric label={_('Horizontal Gaps')} attr="xgap" />
       <Numeric label={_('Vertical Gaps')} attr="ygap" />
     </PlotlySection>
-    <TraceTypeSection
-      name={_('Gaps in Data')}
-      traceTypes={['heatmap', 'contour', 'heatmapgl']}
-      mode="trace"
-    >
+    <TraceTypeSection name={_('Gaps in Data')} traceTypes={['heatmap', 'contour']} mode="trace">
       <Radio
         label={_('Interpolate Gaps')}
         attr="connectgaps"
